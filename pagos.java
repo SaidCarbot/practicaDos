@@ -25,7 +25,7 @@ public class pagos
         if (horas > 40)
         {
             tiempoExtra = horas - 40;
-            pagoTiempoExtra = (int) (tiempoExtra * (pago * 1.5));// No sé porque necesite el cast
+            pagoTiempoExtra = (int) (tiempoExtra * (pago * 1.5));// necesitaba un cast para que fuera entero y concordara con el tipo de dato
             pagoNormal = 40 * pago;
         }
         else
